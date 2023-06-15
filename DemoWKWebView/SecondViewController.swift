@@ -8,7 +8,7 @@
 import UIKit
 import WebKit
 
-class ViewController: UIViewController,
+class SecondViewController: UIViewController,
 WKUIDelegate, WKNavigationDelegate{
 
     var webView: WKWebView!
@@ -27,7 +27,7 @@ WKUIDelegate, WKNavigationDelegate{
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        let naver = "https://m.naver.com"
+        let naver = "https://m.daum.net"
         let url = URL(string:naver)
         let request = URLRequest(url: url!)
         webView.load(request)
